@@ -1,0 +1,8 @@
+_site
+css/sass/.sass-cache
+
+*.swp
+*.swo
+*.swm
+*.swn
+*.swk
