@@ -1,5 +1,12 @@
 @charset "UTF-8";
 /*
+* Bootstrap files 
+*/
+/*
+* Fonts
+*/
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+/*
 * Geneal
 */
 /*
@@ -8150,3 +8157,12 @@ button.close {
     display: none !important;
   }
 }
+/*
+* Layout files 
+*/
+/*
+* Bootstrap files 
+*/
+/*
+* Layout files 
+*/
