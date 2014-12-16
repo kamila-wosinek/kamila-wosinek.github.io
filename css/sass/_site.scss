@@ -1,0 +1,120 @@
+@import "compass/css3";
+
+/*
+* Semantic elements
+*/
+
+h1, h2, h3, h4{
+
+}
+
+input {
+}
+
+textarea {
+}
+
+ul{
+
+}
+
+/*
+* Images
+*/
+
+img {
+    max-width: 100%;
+}
+
+/*
+* Links
+*/
+
+a {
+
+}
+
+/*
+* Buttoms
+*/
+
+
+
+/*
+* Structural elements
+*/
+
+body {
+}
+
+/* Header */
+
+header {
+	padding-top: 10px;
+	font: 300 1.5em $special_font;
+	margin-bottom: 50px;
+	background-color: #fcfcfc;
+	@include box-shadow(1px 0 5px 1px rgba(0,0,0,.05));
+
+	ul {
+		padding-left: 0;
+		list-style: none;
+		padding-top: 20px;
+
+		li {
+			display: inline-block;
+			margin-right: 20px;
+
+			a, a:hover {
+				text-decoration: none;
+			}
+		}
+	}
+}
+
+.logo {
+	@include border-radius(100%);
+	display: block;
+	float: left;
+	margin-right: 15px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.logo-wrap {
+	position: relative;
+	padding: 10px 20px 20px 130px;
+
+	a, a:hover {
+		text-decoration: none;
+		color: #337ab7;
+		display: block;
+	}
+	.name {
+		font: 1.8em $logo_font;
+		margin-top: 15px;
+		line-height: .8em;
+	}
+
+	.surname {
+		margin-left: 15px;
+	}
+}
+
+/* Content */
+
+/* Footer */
+
+footer {
+	margin-top: 40px;
+	font: 300 1em $special_font;
+	color: #777;
+
+	.container {
+		padding-top: 20px;
+		padding-bottom: 15px;
+		border-top: 1px solid #ccc;
+	}
+}
+
