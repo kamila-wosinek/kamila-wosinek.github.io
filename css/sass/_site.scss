@@ -60,10 +60,13 @@ header {
 	width: 100%;
 
 	ul {
-		padding-left: 0;
+		padding: {
+			left: 0;
+			top: 20px;
+			bottom: 37px;
+		}
 		list-style: none;
-		padding-top: 20px;
-		@include transition-property(padding-top margin-top);
+		@include transition-property(padding margin-top);
 		@include transition-duration(0.5s);
 		@include transition-timing-function(ease-in-out);
 
@@ -109,8 +112,9 @@ header.scroll {
 	}
 	ul {
 		padding-top: 0;
+		padding-bottom: 0;
 		margin-top: -5px;
-		@include transition-property(padding-top margin-top);
+		@include transition-property(padding margin-top);
 		@include transition-duration(0.5s);
 		@include transition-timing-function(ease-in-out);
 	}
