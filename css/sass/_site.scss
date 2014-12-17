@@ -53,13 +53,19 @@ header {
 	padding-top: 10px;
 	font: 300 1.5em $special_font;
 	margin-bottom: 50px;
-	background-color: #fcfcfc;
-	@include box-shadow(1px 0 5px 1px rgba(0,0,0,.05));
+	background-color: rgba(101,204,200,.95);
+	color: #fff;
+	z-index: 100;
+	position: fixed;
+	width: 100%;
 
 	ul {
 		padding-left: 0;
 		list-style: none;
 		padding-top: 20px;
+		@include transition-property(padding-top margin-top);
+		@include transition-duration(0.5s);
+		@include transition-timing-function(ease-in-out);
 
 		li {
 			display: inline-block;
@@ -67,8 +73,46 @@ header {
 
 			a, a:hover {
 				text-decoration: none;
+				color: #fff;
 			}
 		}
+	}
+}
+
+
+header.scroll {
+	.logo {
+		max-width: 0;
+		max-height: 0;
+		@include transition(max-width max-height);
+		@include transition-duration(0.5s);
+		@include transition-timing-function(ease-in-out);
+
+	}
+	.logo-wrap {
+		font-size: .7em;
+		padding: 0 0 0 20px;
+		@include transition-property(font-size padding);
+		@include transition-duration(0.5s);
+		@include transition-timing-function(ease-in-out);
+
+		.name {
+			margin-top: 0;
+			@include transition(margin-top 0.5s ease-in-out);
+		}
+
+		.surname {
+			margin-left: 0px;
+			margin-top: 12px;
+			@include transition(margin 0.5s ease-in-out);
+		}
+	}
+	ul {
+		padding-top: 0;
+		margin-top: -5px;
+		@include transition-property(padding-top margin-top);
+		@include transition-duration(0.5s);
+		@include transition-timing-function(ease-in-out);
 	}
 }
 
@@ -77,44 +121,70 @@ header {
 	display: block;
 	float: left;
 	margin-right: 15px;
+	margin-top: 0;
 	position: absolute;
 	top: 0;
 	left: 0;
+	max-width: 100%;
+	max-height: 150%;
+	@include transition-property(max-width max-height);
+	@include transition-duration(0.5s);
+	@include transition-timing-function(ease-in-out);				
 }
 
 .logo-wrap {
 	position: relative;
 	padding: 10px 20px 20px 130px;
+	@include transition-property(font-size padding);
+	@include transition-duration(0.5s);
+	@include transition-timing-function(ease-in-out);
 
 	a, a:hover {
 		text-decoration: none;
-		color: #337ab7;
+		color: #fff;
 		display: block;
 	}
 	.name {
 		font: 1.8em $logo_font;
 		margin-top: 15px;
 		line-height: .8em;
+		@include transition(margin-top 0.5s ease-in-out);
 	}
 
 	.surname {
 		margin-left: 15px;
+		@include transition(margin 0.5s ease-in-out);
 	}
 }
 
 /* Content */
 
+.site {
+	padding-top: 140px;
+	margin-bottom: 120px;
+	position: relative;
+	z-index: 50;
+	background: #fff;
+}
+
 /* Footer */
 
 footer {
-	margin-top: 40px;
+	position: fixed;
+	z-index: 1;
+	bottom: 0;
+	width: 100%;
+	@include background(linear-gradient(to bottom, #353535 0%,#212121 100%));
+	color: #fff;
 	font: 300 1em $special_font;
-	color: #777;
+
+	a {
+		color: #fff;
+	}
 
 	.container {
-		padding-top: 20px;
-		padding-bottom: 15px;
-		border-top: 1px solid #ccc;
+		padding-top: 30px;
+		padding-bottom: 25px;
 	}
 }
 
