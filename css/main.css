@@ -8186,114 +8186,31 @@ img {
 header {
   padding-top: 10px;
   font: 300 1.5em "Lato", sans-serif;
-  margin-bottom: 50px;
   background-color: rgba(101, 204, 200, 0.95);
   color: #fff;
   z-index: 100;
   position: fixed;
   width: 100%;
 }
-/* line 62, sass/_site.scss */
+/* line 61, sass/_site.scss */
 header ul {
   padding-left: 0;
   padding-top: 20px;
   padding-bottom: 37px;
   list-style: none;
-  -moz-transition-property: padding, margin-top;
-  -o-transition-property: padding, margin-top;
-  -webkit-transition-property: padding, margin-top;
-  transition-property: padding margin-top;
-  -moz-transition-duration: 0.5s;
-  -o-transition-duration: 0.5s;
-  -webkit-transition-duration: 0.5s;
-  transition-duration: 0.5s;
-  -moz-transition-timing-function: ease-in-out;
-  -o-transition-timing-function: ease-in-out;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
 }
-/* line 73, sass/_site.scss */
+/* line 69, sass/_site.scss */
 header ul li {
   display: inline-block;
   margin-right: 20px;
 }
-/* line 77, sass/_site.scss */
+/* line 73, sass/_site.scss */
 header ul li a, header ul li a:hover {
   text-decoration: none;
   color: #fff;
 }
 
-/* line 87, sass/_site.scss */
-header.scroll .logo {
-  max-width: 0;
-  max-height: 0;
-  -moz-transition: max-width max-height;
-  -o-transition: max-width max-height;
-  -webkit-transition: max-width max-height;
-  transition: max-width max-height;
-  -moz-transition-duration: 0.5s;
-  -o-transition-duration: 0.5s;
-  -webkit-transition-duration: 0.5s;
-  transition-duration: 0.5s;
-  -moz-transition-timing-function: ease-in-out;
-  -o-transition-timing-function: ease-in-out;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
-}
-/* line 95, sass/_site.scss */
-header.scroll .logo-wrap {
-  font-size: .7em;
-  padding: 0 0 0 20px;
-  -moz-transition-property: font-size, padding;
-  -o-transition-property: font-size, padding;
-  -webkit-transition-property: font-size, padding;
-  transition-property: font-size padding;
-  -moz-transition-duration: 0.5s;
-  -o-transition-duration: 0.5s;
-  -webkit-transition-duration: 0.5s;
-  transition-duration: 0.5s;
-  -moz-transition-timing-function: ease-in-out;
-  -o-transition-timing-function: ease-in-out;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
-}
-/* line 102, sass/_site.scss */
-header.scroll .logo-wrap .name {
-  margin-top: 0;
-  -moz-transition: margin-top 0.5s ease-in-out;
-  -o-transition: margin-top 0.5s ease-in-out;
-  -webkit-transition: margin-top 0.5s ease-in-out;
-  transition: margin-top 0.5s ease-in-out;
-}
-/* line 107, sass/_site.scss */
-header.scroll .logo-wrap .surname {
-  margin-left: 0px;
-  margin-top: 12px;
-  -moz-transition: margin 0.5s ease-in-out;
-  -o-transition: margin 0.5s ease-in-out;
-  -webkit-transition: margin 0.5s ease-in-out;
-  transition: margin 0.5s ease-in-out;
-}
-/* line 113, sass/_site.scss */
-header.scroll ul {
-  padding-top: 0;
-  padding-bottom: 0;
-  margin-top: -5px;
-  -moz-transition-property: padding, margin-top;
-  -o-transition-property: padding, margin-top;
-  -webkit-transition-property: padding, margin-top;
-  transition-property: padding margin-top;
-  -moz-transition-duration: 0.5s;
-  -o-transition-duration: 0.5s;
-  -webkit-transition-duration: 0.5s;
-  transition-duration: 0.5s;
-  -moz-transition-timing-function: ease-in-out;
-  -o-transition-timing-function: ease-in-out;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
-}
-
-/* line 123, sass/_site.scss */
+/* line 81, sass/_site.scss */
 .logo {
   -moz-border-radius: 100%;
   -webkit-border-radius: 100%;
@@ -8306,65 +8223,33 @@ header.scroll ul {
   top: 0;
   left: 0;
   max-width: 100%;
-  max-height: 150%;
-  -moz-transition-property: max-width, max-height;
-  -o-transition-property: max-width, max-height;
-  -webkit-transition-property: max-width, max-height;
-  transition-property: max-width max-height;
-  -moz-transition-duration: 0.5s;
-  -o-transition-duration: 0.5s;
-  -webkit-transition-duration: 0.5s;
-  transition-duration: 0.5s;
-  -moz-transition-timing-function: ease-in-out;
-  -o-transition-timing-function: ease-in-out;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
+  max-height: 141%;
 }
 
-/* line 139, sass/_site.scss */
+/* line 94, sass/_site.scss */
 .logo-wrap {
   position: relative;
   padding: 10px 20px 20px 130px;
-  -moz-transition-property: font-size, padding;
-  -o-transition-property: font-size, padding;
-  -webkit-transition-property: font-size, padding;
-  transition-property: font-size padding;
-  -moz-transition-duration: 0.5s;
-  -o-transition-duration: 0.5s;
-  -webkit-transition-duration: 0.5s;
-  transition-duration: 0.5s;
-  -moz-transition-timing-function: ease-in-out;
-  -o-transition-timing-function: ease-in-out;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
 }
-/* line 146, sass/_site.scss */
+/* line 98, sass/_site.scss */
 .logo-wrap a, .logo-wrap a:hover {
   text-decoration: none;
   color: #fff;
   display: block;
 }
-/* line 151, sass/_site.scss */
+/* line 103, sass/_site.scss */
 .logo-wrap .name {
   font: 1.8em "Dancing Script", cursive;
   margin-top: 15px;
   line-height: .8em;
-  -moz-transition: margin-top 0.5s ease-in-out;
-  -o-transition: margin-top 0.5s ease-in-out;
-  -webkit-transition: margin-top 0.5s ease-in-out;
-  transition: margin-top 0.5s ease-in-out;
 }
-/* line 158, sass/_site.scss */
+/* line 109, sass/_site.scss */
 .logo-wrap .surname {
   margin-left: 15px;
-  -moz-transition: margin 0.5s ease-in-out;
-  -o-transition: margin 0.5s ease-in-out;
-  -webkit-transition: margin 0.5s ease-in-out;
-  transition: margin 0.5s ease-in-out;
 }
 
 /* Content */
-/* line 166, sass/_site.scss */
+/* line 116, sass/_site.scss */
 .site {
   padding-top: 140px;
   margin-bottom: 120px;
@@ -8374,7 +8259,7 @@ header.scroll ul {
 }
 
 /* Footer */
-/* line 176, sass/_site.scss */
+/* line 126, sass/_site.scss */
 footer {
   position: fixed;
   z-index: 1;
@@ -8388,12 +8273,294 @@ footer {
   color: #fff;
   font: 300 1em "Lato", sans-serif;
 }
-/* line 185, sass/_site.scss */
+/* line 135, sass/_site.scss */
 footer a {
   color: #fff;
 }
-/* line 189, sass/_site.scss */
+/* line 139, sass/_site.scss */
 footer .container {
   padding-top: 30px;
   padding-bottom: 25px;
+}
+
+/*
+* Desktop
+*/
+/*
+* Tablet
+*/
+@media screen and (min-width: 768px) {
+  /* line 25, sass/_media.scss */
+  header ul {
+    -moz-transition-property: padding, margin-top;
+    -o-transition-property: padding, margin-top;
+    -webkit-transition-property: padding, margin-top;
+    transition-property: padding margin-top;
+    -moz-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -moz-transition-timing-function: ease-in-out;
+    -o-transition-timing-function: ease-in-out;
+    -webkit-transition-timing-function: ease-in-out;
+    transition-timing-function: ease-in-out;
+  }
+
+  /* line 31, sass/_media.scss */
+  header.scroll .logo {
+    max-width: 0;
+    max-height: 0;
+    -moz-transition: max-width max-height;
+    -o-transition: max-width max-height;
+    -webkit-transition: max-width max-height;
+    transition: max-width max-height;
+    -moz-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -moz-transition-timing-function: ease-in-out;
+    -o-transition-timing-function: ease-in-out;
+    -webkit-transition-timing-function: ease-in-out;
+    transition-timing-function: ease-in-out;
+  }
+  /* line 39, sass/_media.scss */
+  header.scroll .logo-wrap {
+    font-size: .7em;
+    padding: 0 0 0 20px;
+    -moz-transition-property: font-size, padding;
+    -o-transition-property: font-size, padding;
+    -webkit-transition-property: font-size, padding;
+    transition-property: font-size padding;
+    -moz-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -moz-transition-timing-function: ease-in-out;
+    -o-transition-timing-function: ease-in-out;
+    -webkit-transition-timing-function: ease-in-out;
+    transition-timing-function: ease-in-out;
+  }
+  /* line 46, sass/_media.scss */
+  header.scroll .logo-wrap .name {
+    margin-top: 0;
+    -moz-transition: margin-top 0.5s ease-in-out;
+    -o-transition: margin-top 0.5s ease-in-out;
+    -webkit-transition: margin-top 0.5s ease-in-out;
+    transition: margin-top 0.5s ease-in-out;
+  }
+  /* line 51, sass/_media.scss */
+  header.scroll .logo-wrap .surname {
+    margin-left: 0px;
+    margin-top: 12px;
+    -moz-transition: margin 0.5s ease-in-out;
+    -o-transition: margin 0.5s ease-in-out;
+    -webkit-transition: margin 0.5s ease-in-out;
+    transition: margin 0.5s ease-in-out;
+  }
+  /* line 57, sass/_media.scss */
+  header.scroll ul {
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: -5px;
+    -moz-transition-property: padding, margin-top;
+    -o-transition-property: padding, margin-top;
+    -webkit-transition-property: padding, margin-top;
+    transition-property: padding margin-top;
+    -moz-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -moz-transition-timing-function: ease-in-out;
+    -o-transition-timing-function: ease-in-out;
+    -webkit-transition-timing-function: ease-in-out;
+    transition-timing-function: ease-in-out;
+  }
+
+  /* line 67, sass/_media.scss */
+  .logo {
+    -moz-transition-property: max-width, max-height;
+    -o-transition-property: max-width, max-height;
+    -webkit-transition-property: max-width, max-height;
+    transition-property: max-width max-height;
+    -moz-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -moz-transition-timing-function: ease-in-out;
+    -o-transition-timing-function: ease-in-out;
+    -webkit-transition-timing-function: ease-in-out;
+    transition-timing-function: ease-in-out;
+  }
+
+  /* line 73, sass/_media.scss */
+  .logo-wrap {
+    -moz-transition-property: font-size, padding;
+    -o-transition-property: font-size, padding;
+    -webkit-transition-property: font-size, padding;
+    transition-property: font-size padding;
+    -moz-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -moz-transition-timing-function: ease-in-out;
+    -o-transition-timing-function: ease-in-out;
+    -webkit-transition-timing-function: ease-in-out;
+    transition-timing-function: ease-in-out;
+  }
+
+  /* line 79, sass/_media.scss */
+  .name {
+    -moz-transition: margin-top 0.5s ease-in-out;
+    -o-transition: margin-top 0.5s ease-in-out;
+    -webkit-transition: margin-top 0.5s ease-in-out;
+    transition: margin-top 0.5s ease-in-out;
+  }
+
+  /* line 83, sass/_media.scss */
+  .surname {
+    -moz-transition: margin 0.5s ease-in-out;
+    -o-transition: margin 0.5s ease-in-out;
+    -webkit-transition: margin 0.5s ease-in-out;
+    transition: margin 0.5s ease-in-out;
+  }
+}
+/*
+* Bigger phone
+*/
+@media (max-width: 767px) {
+  /* line 93, sass/_media.scss */
+  header {
+    position: relative;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    padding-top: 0;
+    background: #65ccc8;
+  }
+  /* line 100, sass/_media.scss */
+  header ul {
+    padding-bottom: 0;
+    margin-top: -100px;
+    -moz-transition-property: margin-top;
+    -o-transition-property: margin-top;
+    -webkit-transition-property: margin-top;
+    transition-property: margin-top;
+    -moz-transition-duration: 1s;
+    -o-transition-duration: 1s;
+    -webkit-transition-duration: 1s;
+    transition-duration: 1s;
+    -moz-transition-timing-function: ease-in-out;
+    -o-transition-timing-function: ease-in-out;
+    -webkit-transition-timing-function: ease-in-out;
+    transition-timing-function: ease-in-out;
+  }
+  /* line 108, sass/_media.scss */
+  header.open ul {
+    margin-top: 0;
+    -moz-transition-property: margin-top;
+    -o-transition-property: margin-top;
+    -webkit-transition-property: margin-top;
+    transition-property: margin-top;
+    -moz-transition-duration: 1s;
+    -o-transition-duration: 1s;
+    -webkit-transition-duration: 1s;
+    transition-duration: 1s;
+    -moz-transition-timing-function: ease-in-out;
+    -o-transition-timing-function: ease-in-out;
+    -webkit-transition-timing-function: ease-in-out;
+    transition-timing-function: ease-in-out;
+  }
+
+  /* line 115, sass/_media.scss */
+  .logo-wrap {
+    z-index: 40;
+    padding: 10px 20px 0;
+    background: #65ccc8;
+  }
+  /* line 120, sass/_media.scss */
+  .logo-wrap > a {
+    float: left;
+    padding-left: 75px;
+    padding-top: 5px;
+  }
+  /* line 128, sass/_media.scss */
+  .logo-wrap .logo {
+    top: 5px;
+    left: 20px;
+  }
+  /* line 133, sass/_media.scss */
+  .logo-wrap .name {
+    font-size: 1.8em;
+    line-height: .8em;
+  }
+  /* line 138, sass/_media.scss */
+  .logo-wrap .surname {
+    margin-left: 0;
+  }
+
+  /* line 143, sass/_media.scss */
+  .mobile_menu_icon {
+    float: right;
+    width: 40px;
+    height: 35px;
+    background: url("../img/mobile_nav.png") no-repeat;
+    cursor: pointer;
+  }
+
+  /* line 151, sass/_media.scss */
+  .site {
+    padding-top: 0;
+  }
+}
+/*
+* Small phone
+*/
+@media (max-width: 480px) {
+  /* line 161, sass/_media.scss */
+  header {
+    padding: 0;
+  }
+  /* line 163, sass/_media.scss */
+  header .logo {
+    display: none;
+  }
+  /* line 166, sass/_media.scss */
+  header ul {
+    text-align: center;
+    padding-top: 0;
+  }
+  /* line 14, ../../../../.rvm/gems/ruby-2.1.5/gems/bootstrap-sass-3.3.1.0/assets/stylesheets/bootstrap/mixins/_clearfix.scss */
+  header ul:before, header ul:after {
+    content: " ";
+    display: table;
+  }
+  /* line 19, ../../../../.rvm/gems/ruby-2.1.5/gems/bootstrap-sass-3.3.1.0/assets/stylesheets/bootstrap/mixins/_clearfix.scss */
+  header ul:after {
+    clear: both;
+  }
+  /* line 170, sass/_media.scss */
+  header ul li {
+    width: 50%;
+    margin: 0;
+    margin-top: 10px;
+    float: left;
+  }
+  /* line 178, sass/_media.scss */
+  header .nav_wrap {
+    min-height: 0;
+  }
+
+  /* line 183, sass/_media.scss */
+  .logo-wrap {
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-bottom: 1px solid #fff;
+  }
+  /* line 188, sass/_media.scss */
+  .logo-wrap > a {
+    padding-left: 0;
+  }
+  /* line 191, sass/_media.scss */
+  .logo-wrap .name {
+    font-size: 26px;
+  }
 }

@@ -52,7 +52,6 @@ body {
 header {
 	padding-top: 10px;
 	font: 300 1.5em $special_font;
-	margin-bottom: 50px;
 	background-color: rgba(101,204,200,.95);
 	color: #fff;
 	z-index: 100;
@@ -66,9 +65,6 @@ header {
 			bottom: 37px;
 		}
 		list-style: none;
-		@include transition-property(padding margin-top);
-		@include transition-duration(0.5s);
-		@include transition-timing-function(ease-in-out);
 
 		li {
 			display: inline-block;
@@ -82,44 +78,6 @@ header {
 	}
 }
 
-
-header.scroll {
-	.logo {
-		max-width: 0;
-		max-height: 0;
-		@include transition(max-width max-height);
-		@include transition-duration(0.5s);
-		@include transition-timing-function(ease-in-out);
-
-	}
-	.logo-wrap {
-		font-size: .7em;
-		padding: 0 0 0 20px;
-		@include transition-property(font-size padding);
-		@include transition-duration(0.5s);
-		@include transition-timing-function(ease-in-out);
-
-		.name {
-			margin-top: 0;
-			@include transition(margin-top 0.5s ease-in-out);
-		}
-
-		.surname {
-			margin-left: 0px;
-			margin-top: 12px;
-			@include transition(margin 0.5s ease-in-out);
-		}
-	}
-	ul {
-		padding-top: 0;
-		padding-bottom: 0;
-		margin-top: -5px;
-		@include transition-property(padding margin-top);
-		@include transition-duration(0.5s);
-		@include transition-timing-function(ease-in-out);
-	}
-}
-
 .logo {
 	@include border-radius(100%);
 	display: block;
@@ -130,18 +88,12 @@ header.scroll {
 	top: 0;
 	left: 0;
 	max-width: 100%;
-	max-height: 150%;
-	@include transition-property(max-width max-height);
-	@include transition-duration(0.5s);
-	@include transition-timing-function(ease-in-out);				
+	max-height: 141%;
 }
 
 .logo-wrap {
 	position: relative;
 	padding: 10px 20px 20px 130px;
-	@include transition-property(font-size padding);
-	@include transition-duration(0.5s);
-	@include transition-timing-function(ease-in-out);
 
 	a, a:hover {
 		text-decoration: none;
@@ -152,12 +104,10 @@ header.scroll {
 		font: 1.8em $logo_font;
 		margin-top: 15px;
 		line-height: .8em;
-		@include transition(margin-top 0.5s ease-in-out);
 	}
 
 	.surname {
 		margin-left: 15px;
-		@include transition(margin 0.5s ease-in-out);
 	}
 }
 
