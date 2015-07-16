@@ -79,9 +79,49 @@ header {
 			display: inline-block;
 			margin-right: 20px;
 
-			a, a:hover {
+			a {
 				text-decoration: none;
 				color: $text_on_accent;
+				position: relative;
+				padding: 10px;
+
+				&::before, &::after {
+					position: absolute;
+					left: 50%;
+					@include transform(translate(-50%, 0));
+					opacity: 0;
+				}
+
+				&::before {
+					content: "";
+					width: 0;
+					@include transition(width linear .5s, opacity linear .1s);
+				}
+
+				&::after {
+					content: "o";
+					@include transition(opacity linear .1s);
+					bottom: -2px;
+					line-height: 10px;
+					background-color: $accent_cl;
+				}
+
+				&:hover {
+					color: $text_on_accent;
+					text-decoration: none;
+					
+					&::before {
+						content: "";
+						border-bottom: 1px solid $text_on_accent;
+						width: 100%;
+						bottom: 0px;
+					}
+					
+					&::after, &::before {
+						opacity: 1;
+					}
+
+				}
 			}
 		}
 	}

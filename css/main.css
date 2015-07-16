@@ -8220,12 +8220,60 @@ header ul li {
   margin-right: 20px;
 }
 /* line 82, sass/_site.scss */
-header ul li a, header ul li a:hover {
+header ul li a {
   text-decoration: none;
   color: #fff;
+  position: relative;
+  padding: 10px;
+}
+/* line 88, sass/_site.scss */
+header ul li a::before, header ul li a::after {
+  position: absolute;
+  left: 50%;
+  -moz-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  -webkit-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+  opacity: 0;
+}
+/* line 95, sass/_site.scss */
+header ul li a::before {
+  content: "";
+  width: 0;
+  -moz-transition: width 0.5s linear, opacity 0.1s linear;
+  -o-transition: width 0.5s linear, opacity 0.1s linear;
+  -webkit-transition: width 0.5s linear, opacity 0.1s linear;
+  transition: width 0.5s linear, opacity 0.1s linear;
+}
+/* line 101, sass/_site.scss */
+header ul li a::after {
+  content: "o";
+  -moz-transition: opacity 0.1s linear;
+  -o-transition: opacity 0.1s linear;
+  -webkit-transition: opacity 0.1s linear;
+  transition: opacity 0.1s linear;
+  bottom: -2px;
+  line-height: 10px;
+  background-color: rgba(101, 204, 200, 0.95);
+}
+/* line 109, sass/_site.scss */
+header ul li a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+/* line 113, sass/_site.scss */
+header ul li a:hover::before {
+  content: "";
+  border-bottom: 1px solid #fff;
+  width: 100%;
+  bottom: 0px;
+}
+/* line 120, sass/_site.scss */
+header ul li a:hover::after, header ul li a:hover::before {
+  opacity: 1;
 }
 
-/* line 90, sass/_site.scss */
+/* line 130, sass/_site.scss */
 .logo {
   -moz-border-radius: 100%;
   -webkit-border-radius: 100%;
@@ -8241,30 +8289,30 @@ header ul li a, header ul li a:hover {
   max-height: 141%;
 }
 
-/* line 103, sass/_site.scss */
+/* line 143, sass/_site.scss */
 .logo-wrap {
   position: relative;
   padding: 10px 20px 20px 130px;
 }
-/* line 107, sass/_site.scss */
+/* line 147, sass/_site.scss */
 .logo-wrap a, .logo-wrap a:hover {
   text-decoration: none;
   color: #fff;
   display: block;
 }
-/* line 112, sass/_site.scss */
+/* line 152, sass/_site.scss */
 .logo-wrap .name {
   font: 1.8em "Dancing Script", cursive;
   margin-top: 15px;
   line-height: .8em;
 }
-/* line 118, sass/_site.scss */
+/* line 158, sass/_site.scss */
 .logo-wrap .surname {
   margin-left: 15px;
 }
 
 /* Content */
-/* line 125, sass/_site.scss */
+/* line 165, sass/_site.scss */
 .site {
   padding-top: 140px;
   margin-bottom: 120px;
@@ -8274,7 +8322,7 @@ header ul li a, header ul li a:hover {
 }
 
 /* Footer */
-/* line 135, sass/_site.scss */
+/* line 175, sass/_site.scss */
 footer {
   position: fixed;
   z-index: 1;
@@ -8288,11 +8336,11 @@ footer {
   color: #fff;
   font: 300 1em "Lato", sans-serif;
 }
-/* line 144, sass/_site.scss */
+/* line 184, sass/_site.scss */
 footer a {
   color: #fff;
 }
-/* line 148, sass/_site.scss */
+/* line 188, sass/_site.scss */
 footer .container {
   padding-top: 30px;
   padding-bottom: 25px;
