@@ -8257,23 +8257,23 @@ header ul li a::after {
   background-color: rgba(101, 204, 200, 0.95);
 }
 /* line 109, sass/_site.scss */
-header ul li a:hover {
+header ul li a:focus, header ul li a:hover {
   color: #fff;
   text-decoration: none;
 }
-/* line 113, sass/_site.scss */
+/* line 115, sass/_site.scss */
 header ul li a:hover::before {
   content: "";
   border-bottom: 1px solid #fff;
   width: 100%;
   bottom: 0px;
 }
-/* line 120, sass/_site.scss */
+/* line 122, sass/_site.scss */
 header ul li a:hover::after, header ul li a:hover::before {
   opacity: 1;
 }
 
-/* line 130, sass/_site.scss */
+/* line 132, sass/_site.scss */
 .logo {
   -moz-border-radius: 100%;
   -webkit-border-radius: 100%;
@@ -8289,30 +8289,30 @@ header ul li a:hover::after, header ul li a:hover::before {
   max-height: 141%;
 }
 
-/* line 143, sass/_site.scss */
+/* line 145, sass/_site.scss */
 .logo-wrap {
   position: relative;
   padding: 10px 20px 20px 130px;
 }
-/* line 147, sass/_site.scss */
+/* line 149, sass/_site.scss */
 .logo-wrap a, .logo-wrap a:hover {
   text-decoration: none;
   color: #fff;
   display: block;
 }
-/* line 152, sass/_site.scss */
+/* line 154, sass/_site.scss */
 .logo-wrap .name {
   font: 1.8em "Dancing Script", cursive;
   margin-top: 15px;
   line-height: .8em;
 }
-/* line 158, sass/_site.scss */
+/* line 160, sass/_site.scss */
 .logo-wrap .surname {
   margin-left: 15px;
 }
 
 /* Content */
-/* line 165, sass/_site.scss */
+/* line 167, sass/_site.scss */
 .site {
   padding-top: 140px;
   margin-bottom: 120px;
@@ -8322,7 +8322,7 @@ header ul li a:hover::after, header ul li a:hover::before {
 }
 
 /* Footer */
-/* line 175, sass/_site.scss */
+/* line 177, sass/_site.scss */
 footer {
   position: fixed;
   z-index: 1;
@@ -8336,11 +8336,11 @@ footer {
   color: #fff;
   font: 300 1em "Lato", sans-serif;
 }
-/* line 184, sass/_site.scss */
+/* line 186, sass/_site.scss */
 footer a {
   color: #fff;
 }
-/* line 188, sass/_site.scss */
+/* line 190, sass/_site.scss */
 footer .container {
   padding-top: 30px;
   padding-bottom: 25px;
@@ -8438,8 +8438,24 @@ footer .container {
     -webkit-transition-timing-function: ease-in-out;
     transition-timing-function: ease-in-out;
   }
+  /* line 66, sass/_media.scss */
+  header.scroll ul li a::after {
+    -moz-border-radius: 100%;
+    -webkit-border-radius: 100%;
+    border-radius: 100%;
+    height: 15px;
+    width: 15px;
+    line-height: 8px;
+    text-align: -webkit-center;
+    text-align: center;
+    bottom: -5px;
+  }
+  /* line 75, sass/_media.scss */
+  header.scroll ul li a::before {
+    bottom: 2px;
+  }
 
-  /* line 67, sass/_media.scss */
+  /* line 82, sass/_media.scss */
   .logo {
     -moz-transition-property: max-width, max-height;
     -o-transition-property: max-width, max-height;
@@ -8455,7 +8471,7 @@ footer .container {
     transition-timing-function: ease-in-out;
   }
 
-  /* line 73, sass/_media.scss */
+  /* line 88, sass/_media.scss */
   .logo-wrap {
     -moz-transition-property: font-size, padding;
     -o-transition-property: font-size, padding;
@@ -8471,7 +8487,7 @@ footer .container {
     transition-timing-function: ease-in-out;
   }
 
-  /* line 79, sass/_media.scss */
+  /* line 94, sass/_media.scss */
   .name {
     -moz-transition: margin-top 0.5s ease-in-out;
     -o-transition: margin-top 0.5s ease-in-out;
@@ -8479,7 +8495,7 @@ footer .container {
     transition: margin-top 0.5s ease-in-out;
   }
 
-  /* line 83, sass/_media.scss */
+  /* line 98, sass/_media.scss */
   .surname {
     -moz-transition: margin 0.5s ease-in-out;
     -o-transition: margin 0.5s ease-in-out;
@@ -8491,7 +8507,7 @@ footer .container {
 * Bigger phone
 */
 @media (max-width: 767px) {
-  /* line 93, sass/_media.scss */
+  /* line 108, sass/_media.scss */
   header {
     position: relative;
     margin-bottom: 20px;
@@ -8499,7 +8515,7 @@ footer .container {
     padding-top: 0;
     background: #65ccc8;
   }
-  /* line 100, sass/_media.scss */
+  /* line 115, sass/_media.scss */
   header ul {
     padding-bottom: 0;
     margin-top: -100px;
@@ -8516,7 +8532,7 @@ footer .container {
     -webkit-transition-timing-function: ease-in-out;
     transition-timing-function: ease-in-out;
   }
-  /* line 108, sass/_media.scss */
+  /* line 123, sass/_media.scss */
   header.open ul {
     margin-top: 0;
     -moz-transition-property: margin-top;
@@ -8533,34 +8549,34 @@ footer .container {
     transition-timing-function: ease-in-out;
   }
 
-  /* line 115, sass/_media.scss */
+  /* line 130, sass/_media.scss */
   .logo-wrap {
     z-index: 40;
     padding: 10px 20px 0;
     background: #65ccc8;
   }
-  /* line 120, sass/_media.scss */
+  /* line 135, sass/_media.scss */
   .logo-wrap > a {
     float: left;
     padding-left: 75px;
     padding-top: 5px;
   }
-  /* line 128, sass/_media.scss */
+  /* line 143, sass/_media.scss */
   .logo-wrap .logo {
     top: 5px;
     left: 20px;
   }
-  /* line 133, sass/_media.scss */
+  /* line 148, sass/_media.scss */
   .logo-wrap .name {
     font-size: 1.8em;
     line-height: .8em;
   }
-  /* line 138, sass/_media.scss */
+  /* line 153, sass/_media.scss */
   .logo-wrap .surname {
     margin-left: 0;
   }
 
-  /* line 143, sass/_media.scss */
+  /* line 158, sass/_media.scss */
   .mobile_menu_icon {
     float: right;
     width: 40px;
@@ -8569,7 +8585,7 @@ footer .container {
     cursor: pointer;
   }
 
-  /* line 151, sass/_media.scss */
+  /* line 166, sass/_media.scss */
   .site {
     padding-top: 0;
   }
@@ -8578,15 +8594,15 @@ footer .container {
 * Small phone
 */
 @media (max-width: 480px) {
-  /* line 161, sass/_media.scss */
+  /* line 176, sass/_media.scss */
   header {
     padding: 0;
   }
-  /* line 163, sass/_media.scss */
+  /* line 178, sass/_media.scss */
   header .logo {
     display: none;
   }
-  /* line 166, sass/_media.scss */
+  /* line 181, sass/_media.scss */
   header ul {
     text-align: center;
     padding-top: 0;
@@ -8600,29 +8616,29 @@ footer .container {
   header ul:after {
     clear: both;
   }
-  /* line 170, sass/_media.scss */
+  /* line 185, sass/_media.scss */
   header ul li {
     width: 50%;
     margin: 0;
     margin-top: 10px;
     float: left;
   }
-  /* line 178, sass/_media.scss */
+  /* line 193, sass/_media.scss */
   header .nav_wrap {
     min-height: 0;
   }
 
-  /* line 183, sass/_media.scss */
+  /* line 198, sass/_media.scss */
   .logo-wrap {
     padding-bottom: 10px;
     padding-top: 10px;
     border-bottom: 1px solid #fff;
   }
-  /* line 188, sass/_media.scss */
+  /* line 203, sass/_media.scss */
   .logo-wrap > a {
     padding-left: 0;
   }
-  /* line 191, sass/_media.scss */
+  /* line 206, sass/_media.scss */
   .logo-wrap .name {
     font-size: 26px;
   }

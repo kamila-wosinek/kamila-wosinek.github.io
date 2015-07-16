@@ -106,10 +106,12 @@ header {
 					background-color: $accent_cl;
 				}
 
-				&:hover {
+				&:focus, &:hover {
 					color: $text_on_accent;
 					text-decoration: none;
-					
+				}
+
+				&:hover {
 					&::before {
 						content: "";
 						border-bottom: 1px solid $text_on_accent;
