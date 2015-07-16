@@ -8175,14 +8175,29 @@ img {
 /*
 * Links
 */
+/* line 33, sass/_site.scss */
+a {
+  color: rgba(101, 204, 200, 0.95);
+}
+/* line 36, sass/_site.scss */
+a:hover {
+  text-decoration: underline;
+}
+
 /*
 * Buttoms
 */
 /*
 * Structural elements
 */
+/* line 54, sass/_site.scss */
+::selection {
+  background-color: rgba(101, 204, 200, 0.95);
+  color: #fff;
+}
+
 /* Header */
-/* line 52, sass/_site.scss */
+/* line 61, sass/_site.scss */
 header {
   padding-top: 10px;
   font: 300 1.5em "Lato", sans-serif;
@@ -8192,25 +8207,25 @@ header {
   position: fixed;
   width: 100%;
 }
-/* line 61, sass/_site.scss */
+/* line 70, sass/_site.scss */
 header ul {
   padding-left: 0;
   padding-top: 20px;
   padding-bottom: 37px;
   list-style: none;
 }
-/* line 69, sass/_site.scss */
+/* line 78, sass/_site.scss */
 header ul li {
   display: inline-block;
   margin-right: 20px;
 }
-/* line 73, sass/_site.scss */
+/* line 82, sass/_site.scss */
 header ul li a, header ul li a:hover {
   text-decoration: none;
   color: #fff;
 }
 
-/* line 81, sass/_site.scss */
+/* line 90, sass/_site.scss */
 .logo {
   -moz-border-radius: 100%;
   -webkit-border-radius: 100%;
@@ -8226,30 +8241,30 @@ header ul li a, header ul li a:hover {
   max-height: 141%;
 }
 
-/* line 94, sass/_site.scss */
+/* line 103, sass/_site.scss */
 .logo-wrap {
   position: relative;
   padding: 10px 20px 20px 130px;
 }
-/* line 98, sass/_site.scss */
+/* line 107, sass/_site.scss */
 .logo-wrap a, .logo-wrap a:hover {
   text-decoration: none;
   color: #fff;
   display: block;
 }
-/* line 103, sass/_site.scss */
+/* line 112, sass/_site.scss */
 .logo-wrap .name {
   font: 1.8em "Dancing Script", cursive;
   margin-top: 15px;
   line-height: .8em;
 }
-/* line 109, sass/_site.scss */
+/* line 118, sass/_site.scss */
 .logo-wrap .surname {
   margin-left: 15px;
 }
 
 /* Content */
-/* line 116, sass/_site.scss */
+/* line 125, sass/_site.scss */
 .site {
   padding-top: 140px;
   margin-bottom: 120px;
@@ -8259,7 +8274,7 @@ header ul li a, header ul li a:hover {
 }
 
 /* Footer */
-/* line 126, sass/_site.scss */
+/* line 135, sass/_site.scss */
 footer {
   position: fixed;
   z-index: 1;
@@ -8273,11 +8288,11 @@ footer {
   color: #fff;
   font: 300 1em "Lato", sans-serif;
 }
-/* line 135, sass/_site.scss */
+/* line 144, sass/_site.scss */
 footer a {
   color: #fff;
 }
-/* line 139, sass/_site.scss */
+/* line 148, sass/_site.scss */
 footer .container {
   padding-top: 30px;
   padding-bottom: 25px;

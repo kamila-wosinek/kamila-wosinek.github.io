@@ -31,7 +31,11 @@ img {
 */
 
 a {
+	color: $accent_cl;
 
+	&:hover {
+		text-decoration: underline;
+	}
 }
 
 /*
@@ -47,13 +51,18 @@ a {
 body {
 }
 
+::selection {
+	background-color: $accent_cl;
+	color: $text_on_accent;
+}
+
 /* Header */
 
 header {
 	padding-top: 10px;
 	font: 300 1.5em $special_font;
-	background-color: rgba(101,204,200,.95);
-	color: #fff;
+	background-color: $header_bg;
+	color: $header_text_cl;
 	z-index: 100;
 	position: fixed;
 	width: 100%;
@@ -72,7 +81,7 @@ header {
 
 			a, a:hover {
 				text-decoration: none;
-				color: #fff;
+				color: $text_on_accent;
 			}
 		}
 	}
