@@ -7,6 +7,7 @@
 */
 @import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
 @import url(http://fonts.googleapis.com/css?family=Dancing+Script);
+@import url(http://fonts.googleapis.com/css?family=Roboto:700,300,400,100);
 /*
 * Geneal
 */
@@ -8164,6 +8165,11 @@ button.close {
 /*
 * Semantic elements
 */
+/* line 7, sass/_site.scss */
+h1, h2, h3, h4 {
+  font-weight: 300;
+}
+
 /*
 * Images
 */
@@ -8190,14 +8196,20 @@ a:hover {
 /*
 * Structural elements
 */
-/* line 54, sass/_site.scss */
+/* line 51, sass/_site.scss */
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+
+/* line 56, sass/_site.scss */
 ::selection {
   background-color: rgba(101, 204, 200, 0.95);
   color: #fff;
 }
 
 /* Header */
-/* line 61, sass/_site.scss */
+/* line 63, sass/_site.scss */
 header {
   padding-top: 10px;
   font: 300 1.5em "Lato", sans-serif;
@@ -8207,26 +8219,26 @@ header {
   position: fixed;
   width: 100%;
 }
-/* line 70, sass/_site.scss */
+/* line 72, sass/_site.scss */
 header ul {
   padding-left: 0;
   padding-top: 20px;
   padding-bottom: 37px;
   list-style: none;
 }
-/* line 78, sass/_site.scss */
+/* line 80, sass/_site.scss */
 header ul li {
   display: inline-block;
   margin-right: 20px;
 }
-/* line 82, sass/_site.scss */
+/* line 84, sass/_site.scss */
 header ul li a {
   text-decoration: none;
   color: #fff;
   position: relative;
   padding: 10px;
 }
-/* line 88, sass/_site.scss */
+/* line 90, sass/_site.scss */
 header ul li a::before, header ul li a::after {
   position: absolute;
   left: 50%;
@@ -8236,7 +8248,7 @@ header ul li a::before, header ul li a::after {
   transform: translate(-50%, 0);
   opacity: 0;
 }
-/* line 95, sass/_site.scss */
+/* line 97, sass/_site.scss */
 header ul li a::before {
   content: "";
   width: 0;
@@ -8245,7 +8257,7 @@ header ul li a::before {
   -webkit-transition: width 0.5s linear, opacity 0.1s linear;
   transition: width 0.5s linear, opacity 0.1s linear;
 }
-/* line 101, sass/_site.scss */
+/* line 103, sass/_site.scss */
 header ul li a::after {
   content: "o";
   -moz-transition: opacity 0.1s linear;
@@ -8256,24 +8268,24 @@ header ul li a::after {
   line-height: 10px;
   background-color: rgba(101, 204, 200, 0.95);
 }
-/* line 109, sass/_site.scss */
+/* line 111, sass/_site.scss */
 header ul li a:focus, header ul li a:hover {
   color: #fff;
   text-decoration: none;
 }
-/* line 115, sass/_site.scss */
+/* line 117, sass/_site.scss */
 header ul li a:hover::before {
   content: "";
   border-bottom: 1px solid #fff;
   width: 100%;
   bottom: 0px;
 }
-/* line 122, sass/_site.scss */
+/* line 124, sass/_site.scss */
 header ul li a:hover::after, header ul li a:hover::before {
   opacity: 1;
 }
 
-/* line 132, sass/_site.scss */
+/* line 134, sass/_site.scss */
 .logo {
   -moz-border-radius: 100%;
   -webkit-border-radius: 100%;
@@ -8289,30 +8301,30 @@ header ul li a:hover::after, header ul li a:hover::before {
   max-height: 141%;
 }
 
-/* line 145, sass/_site.scss */
+/* line 147, sass/_site.scss */
 .logo-wrap {
   position: relative;
   padding: 10px 20px 20px 130px;
 }
-/* line 149, sass/_site.scss */
+/* line 151, sass/_site.scss */
 .logo-wrap a, .logo-wrap a:hover {
   text-decoration: none;
   color: #fff;
   display: block;
 }
-/* line 154, sass/_site.scss */
+/* line 156, sass/_site.scss */
 .logo-wrap .name {
   font: 1.8em "Dancing Script", cursive;
   margin-top: 15px;
   line-height: .8em;
 }
-/* line 160, sass/_site.scss */
+/* line 162, sass/_site.scss */
 .logo-wrap .surname {
   margin-left: 15px;
 }
 
 /* Content */
-/* line 167, sass/_site.scss */
+/* line 169, sass/_site.scss */
 .site {
   padding-top: 140px;
   margin-bottom: 120px;
@@ -8322,7 +8334,7 @@ header ul li a:hover::after, header ul li a:hover::before {
 }
 
 /* Footer */
-/* line 177, sass/_site.scss */
+/* line 179, sass/_site.scss */
 footer {
   position: fixed;
   z-index: 1;
@@ -8336,11 +8348,11 @@ footer {
   color: #fff;
   font: 300 1em "Lato", sans-serif;
 }
-/* line 186, sass/_site.scss */
+/* line 188, sass/_site.scss */
 footer a {
   color: #fff;
 }
-/* line 190, sass/_site.scss */
+/* line 192, sass/_site.scss */
 footer .container {
   padding-top: 30px;
   padding-bottom: 25px;
