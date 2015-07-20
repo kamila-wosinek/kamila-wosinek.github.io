@@ -176,6 +176,7 @@ header {
 
 #contact {
 	text-align: right;
+	padding-bottom: 30px;
 
 	h1 {
 		margin-top: $contact_h1_mt;
@@ -185,8 +186,11 @@ header {
 		@include border-radius(100% 0 0);
 		margin-bottom: 30px;
 		margin-top: -1 * $contact_h1_mt;
-		@include shape-outside(border-box);
-		@include shape-margin(30px);
+		max-width: 60%;
+		shape-outside: border-box;
+		-webkit-shape-outside: border-box;
+		shape-margin: 30px;
+		-webkit-shape-margin: 30px;
 	}
 }
 

@@ -8336,23 +8336,29 @@ header ul li a:hover::after, header ul li a:hover::before {
 /* line 177, sass/_site.scss */
 #contact {
   text-align: right;
+  padding-bottom: 30px;
 }
-/* line 180, sass/_site.scss */
+/* line 181, sass/_site.scss */
 #contact h1 {
   margin-top: 100px;
   margin-bottom: 50px;
 }
-/* line 184, sass/_site.scss */
+/* line 185, sass/_site.scss */
 #contact img {
   -moz-border-radius: 100% 0 0;
   -webkit-border-radius: 100%;
   border-radius: 100% 0 0;
   margin-bottom: 30px;
   margin-top: -100px;
+  max-width: 60%;
+  shape-outside: border-box;
+  -webkit-shape-outside: border-box;
+  shape-margin: 30px;
+  -webkit-shape-margin: 30px;
 }
 
 /* Footer */
-/* line 193, sass/_site.scss */
+/* line 199, sass/_site.scss */
 footer {
   position: fixed;
   z-index: 1;
@@ -8366,11 +8372,11 @@ footer {
   color: #fff;
   font: 300 1em "Lato", sans-serif;
 }
-/* line 202, sass/_site.scss */
+/* line 208, sass/_site.scss */
 footer a {
   color: #fff;
 }
-/* line 206, sass/_site.scss */
+/* line 212, sass/_site.scss */
 footer .container {
   padding-top: 30px;
   padding-bottom: 25px;
@@ -8619,20 +8625,29 @@ footer .container {
   .site {
     padding-top: 0;
   }
+
+  /* line 170, sass/_media.scss */
+  #contact {
+    text-align: center;
+  }
+  /* line 173, sass/_media.scss */
+  #contact h1 {
+    margin-top: 30px;
+  }
 }
 /*
 * Small phone
 */
 @media (max-width: 480px) {
-  /* line 176, sass/_media.scss */
+  /* line 184, sass/_media.scss */
   header {
     padding: 0;
   }
-  /* line 178, sass/_media.scss */
+  /* line 186, sass/_media.scss */
   header .logo {
     display: none;
   }
-  /* line 181, sass/_media.scss */
+  /* line 189, sass/_media.scss */
   header ul {
     text-align: center;
     padding-top: 0;
@@ -8646,29 +8661,29 @@ footer .container {
   header ul:after {
     clear: both;
   }
-  /* line 185, sass/_media.scss */
+  /* line 193, sass/_media.scss */
   header ul li {
     width: 50%;
     margin: 0;
     margin-top: 10px;
     float: left;
   }
-  /* line 193, sass/_media.scss */
+  /* line 201, sass/_media.scss */
   header .nav_wrap {
     min-height: 0;
   }
 
-  /* line 198, sass/_media.scss */
+  /* line 206, sass/_media.scss */
   .logo-wrap {
     padding-bottom: 10px;
     padding-top: 10px;
     border-bottom: 1px solid #fff;
   }
-  /* line 203, sass/_media.scss */
+  /* line 211, sass/_media.scss */
   .logo-wrap > a {
     padding-left: 0;
   }
-  /* line 206, sass/_media.scss */
+  /* line 214, sass/_media.scss */
   .logo-wrap .name {
     font-size: 26px;
   }
