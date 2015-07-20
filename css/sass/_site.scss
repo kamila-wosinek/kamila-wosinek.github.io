@@ -185,6 +185,8 @@ header {
 		@include border-radius(100% 0 0);
 		margin-bottom: 30px;
 		margin-top: -1 * $contact_h1_mt;
+		@include shape-outside(border-box);
+		@include shape-margin(30px);
 	}
 }
 
