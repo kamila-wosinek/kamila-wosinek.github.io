@@ -5,7 +5,7 @@
 */
 
 h1, h2, h3, h4{
-	font-weight: 300;
+	font-weight: 100;
 }
 
 input {
@@ -172,6 +172,20 @@ header {
 	position: relative;
 	z-index: 50;
 	background: #fff;
+}
+
+#contact {
+	text-align: right;
+
+	h1 {
+		margin-top: $contact_h1_mt;
+		margin-bottom: $contact_h1_mt/2;
+	}
+	img {
+		@include border-radius(100% 0 0);
+		margin-bottom: 30px;
+		margin-top: -1 * $contact_h1_mt;
+	}
 }
 
 /* Footer */

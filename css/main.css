@@ -8167,7 +8167,7 @@ button.close {
 */
 /* line 7, sass/_site.scss */
 h1, h2, h3, h4 {
-  font-weight: 300;
+  font-weight: 100;
 }
 
 /*
@@ -8333,8 +8333,26 @@ header ul li a:hover::after, header ul li a:hover::before {
   background: #fff;
 }
 
+/* line 177, sass/_site.scss */
+#contact {
+  text-align: right;
+}
+/* line 180, sass/_site.scss */
+#contact h1 {
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+/* line 184, sass/_site.scss */
+#contact img {
+  -moz-border-radius: 100% 0 0;
+  -webkit-border-radius: 100%;
+  border-radius: 100% 0 0;
+  margin-bottom: 30px;
+  margin-top: -100px;
+}
+
 /* Footer */
-/* line 179, sass/_site.scss */
+/* line 193, sass/_site.scss */
 footer {
   position: fixed;
   z-index: 1;
@@ -8348,11 +8366,11 @@ footer {
   color: #fff;
   font: 300 1em "Lato", sans-serif;
 }
-/* line 188, sass/_site.scss */
+/* line 202, sass/_site.scss */
 footer a {
   color: #fff;
 }
-/* line 192, sass/_site.scss */
+/* line 206, sass/_site.scss */
 footer .container {
   padding-top: 30px;
   padding-bottom: 25px;
