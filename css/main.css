@@ -8326,7 +8326,7 @@ header ul li a:hover::after, header ul li a:hover::before {
 /* Content */
 /* line 169, sass/_site.scss */
 .site {
-  padding-top: 140px;
+  padding-top: 150px;
   margin-bottom: 120px;
   position: relative;
   z-index: 50;
