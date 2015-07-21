@@ -194,6 +194,17 @@ header {
 	}
 }
 
+.circles-img {
+	float: left;
+	width: 100%;
+	height: 14ex;
+	background: #009966 url('/img/dunas.jpg');
+	-webkit-shape-outside: url('/img/home-img.png');
+	-webkit-shape-margin: 30px;
+	mask-image: url('/img/home-img.png');
+}
+
+
 /* Footer */
 
 footer {

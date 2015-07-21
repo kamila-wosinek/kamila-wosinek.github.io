@@ -8357,8 +8357,19 @@ header ul li a:hover::after, header ul li a:hover::before {
   -webkit-shape-margin: 30px;
 }
 
+/* line 197, sass/_site.scss */
+.circles-img {
+  float: left;
+  width: 100%;
+  height: 14ex;
+  background: #009966 url("/img/dunas.jpg");
+  -webkit-shape-outside: url("/img/home-img.png");
+  -webkit-shape-margin: 30px;
+  mask-image: url("/img/home-img.png");
+}
+
 /* Footer */
-/* line 199, sass/_site.scss */
+/* line 210, sass/_site.scss */
 footer {
   position: fixed;
   z-index: 1;
@@ -8372,11 +8383,11 @@ footer {
   color: #fff;
   font: 300 1em "Lato", sans-serif;
 }
-/* line 208, sass/_site.scss */
+/* line 219, sass/_site.scss */
 footer a {
   color: #fff;
 }
-/* line 212, sass/_site.scss */
+/* line 223, sass/_site.scss */
 footer .container {
   padding-top: 30px;
   padding-bottom: 25px;
