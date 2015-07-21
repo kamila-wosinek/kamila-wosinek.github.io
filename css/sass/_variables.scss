@@ -1,0 +1,34 @@
+/*
+* Fonts
+*/
+
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+@import url(http://fonts.googleapis.com/css?family=Dancing+Script);
+@import url(http://fonts.googleapis.com/css?family=Roboto:700,300,400,100);
+
+/*
+* Geneal
+*/
+
+$special_font: 'Lato', sans-serif;
+$logo_font: 'Dancing Script', cursive;
+$body_font: 'Roboto', sans-serif;
+
+$accent_cl: 		rgba(101,204,200,.95);
+$text_on_accent: 	#fff;
+$header_bg: 		$accent_cl;
+$header_text_cl: 	$text_on_accent;
+
+$contact_h1_mt: 	100px;
+
+/*
+* Grid
+*/
+
+// Medium screen / desktop
+$container-desktop:           ((910px + $grid-gutter-width));
+$container-md:                $container-desktop;
+
+// Large screen / wide desktop
+$container-large-desktop:     ((950px + $grid-gutter-width));
+$container-lg:                $container-large-desktop;

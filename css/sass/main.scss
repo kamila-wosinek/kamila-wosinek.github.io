@@ -1,0 +1,16 @@
+/*
+* Bootstrap files 
+*/
+
+@import "bootstrap-compass";
+@import "bootstrap-variables";
+@import "variables"; //variables before Bootstrap's file becouse of grid's changes
+@import "bootstrap";
+
+/*
+* Layout files 
+*/
+
+@import "mixins";
+@import "site";
+@import "media";

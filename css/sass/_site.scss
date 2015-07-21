@@ -1,0 +1,217 @@
+@import "compass/css3";
+
+/*
+* Semantic elements
+*/
+
+h1, h2, h3, h4{
+	font-weight: 100;
+}
+
+input {
+}
+
+textarea {
+}
+
+ul{
+
+}
+
+/*
+* Images
+*/
+
+img {
+    max-width: 100%;
+}
+
+/*
+* Links
+*/
+
+a {
+	color: $accent_cl;
+
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+/*
+* Buttoms
+*/
+
+
+
+/*
+* Structural elements
+*/
+
+body {
+	font-family: $body_font;
+	font-weight: 300;
+}
+
+::selection {
+	background-color: $accent_cl;
+	color: $text_on_accent;
+}
+
+/* Header */
+
+header {
+	padding-top: 10px;
+	font: 300 1.5em $special_font;
+	background-color: $header_bg;
+	color: $header_text_cl;
+	z-index: 100;
+	position: fixed;
+	width: 100%;
+
+	ul {
+		padding: {
+			left: 0;
+			top: 20px;
+			bottom: 37px;
+		}
+		list-style: none;
+
+		li {
+			display: inline-block;
+			margin-right: 20px;
+
+			a {
+				text-decoration: none;
+				color: $text_on_accent;
+				position: relative;
+				padding: 10px;
+
+				&::before, &::after {
+					position: absolute;
+					left: 50%;
+					@include transform(translate(-50%, 0));
+					opacity: 0;
+				}
+
+				&::before {
+					content: "";
+					width: 0;
+					@include transition(width linear .5s, opacity linear .1s);
+				}
+
+				&::after {
+					content: "o";
+					@include transition(opacity linear .1s);
+					bottom: -2px;
+					line-height: 10px;
+					background-color: $accent_cl;
+				}
+
+				&:focus, &:hover {
+					color: $text_on_accent;
+					text-decoration: none;
+				}
+
+				&:hover {
+					&::before {
+						content: "";
+						border-bottom: 1px solid $text_on_accent;
+						width: 100%;
+						bottom: 0px;
+					}
+					
+					&::after, &::before {
+						opacity: 1;
+					}
+
+				}
+			}
+		}
+	}
+}
+
+.logo {
+	@include border-radius(100%);
+	display: block;
+	float: left;
+	margin-right: 15px;
+	margin-top: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	max-width: 100%;
+	max-height: 141%;
+}
+
+.logo-wrap {
+	position: relative;
+	padding: 10px 20px 20px 130px;
+
+	a, a:hover {
+		text-decoration: none;
+		color: #fff;
+		display: block;
+	}
+	.name {
+		font: 1.8em $logo_font;
+		margin-top: 15px;
+		line-height: .8em;
+	}
+
+	.surname {
+		margin-left: 15px;
+	}
+}
+
+/* Content */
+
+.site {
+	padding-top: 140px;
+	margin-bottom: 120px;
+	position: relative;
+	z-index: 50;
+	background: #fff;
+}
+
+#contact {
+	text-align: right;
+	padding-bottom: 30px;
+
+	h1 {
+		margin-top: $contact_h1_mt;
+		margin-bottom: $contact_h1_mt/2;
+	}
+	img {
+		@include border-radius(100% 0 0);
+		margin-bottom: 30px;
+		margin-top: -1 * $contact_h1_mt;
+		max-width: 60%;
+		shape-outside: border-box;
+		-webkit-shape-outside: border-box;
+		shape-margin: 30px;
+		-webkit-shape-margin: 30px;
+	}
+}
+
+/* Footer */
+
+footer {
+	position: fixed;
+	z-index: 1;
+	bottom: 0;
+	width: 100%;
+	@include background(linear-gradient(to bottom, #353535 0%,#212121 100%));
+	color: #fff;
+	font: 300 1em $special_font;
+
+	a {
+		color: #fff;
+	}
+
+	.container {
+		padding-top: 30px;
+		padding-bottom: 25px;
+	}
+}
+
