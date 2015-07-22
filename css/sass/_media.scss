@@ -181,6 +181,10 @@
 */
 
 @media (max-width: 480px) {
+	.big-marg-top {
+		margin-top: 35px;
+	}
+
 	header {
 		padding: 0;
 		.logo {
