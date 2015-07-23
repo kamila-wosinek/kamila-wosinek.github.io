@@ -8483,15 +8483,16 @@ header ul li a:hover::after, header ul li a:hover::before {
   width: 50%;
   padding-bottom: 10px;
   margin-bottom: 25px;
+  margin-top: 35px;
 }
 
-/* line 308, sass/_site.scss */
+/* line 309, sass/_site.scss */
 .project {
   position: relative;
 }
 
 /* Footer */
-/* line 317, sass/_site.scss */
+/* line 318, sass/_site.scss */
 footer {
   position: fixed;
   z-index: 1;
@@ -8505,11 +8506,11 @@ footer {
   color: #fff;
   font: 300 1em "Lato", sans-serif;
 }
-/* line 326, sass/_site.scss */
+/* line 327, sass/_site.scss */
 footer a {
   color: #fff;
 }
-/* line 330, sass/_site.scss */
+/* line 331, sass/_site.scss */
 footer .container {
   padding-top: 30px;
   padding-bottom: 25px;
