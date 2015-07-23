@@ -8178,16 +8178,38 @@ h1, h2, h3, h4 {
   margin-top: 70px;
 }
 
+/* line 29, sass/_site.scss */
+.big-marg-bt {
+  margin-bottom: 70px;
+}
+
+/* line 33, sass/_site.scss */
+.col-title {
+  width: 30%;
+  float: left;
+  font-weight: 400;
+}
+
+/* line 39, sass/_site.scss */
+.col-desc {
+  width: 70%;
+  float: left;
+}
+/* line 43, sass/_site.scss */
+.col-desc .no-title {
+  margin-left: 30%;
+}
+
 /*
 * Images
 */
-/* line 33, sass/_site.scss */
+/* line 52, sass/_site.scss */
 img {
   max-width: 100%;
   margin-bottom: 20px;
 }
 
-/* line 38, sass/_site.scss */
+/* line 57, sass/_site.scss */
 .quarter-circ-img {
   -moz-border-radius: 100% 0 0;
   -webkit-border-radius: 100%;
@@ -8201,30 +8223,30 @@ img {
   -webkit-shape-margin: 30px;
 }
 
-/* line 49, sass/_site.scss */
+/* line 68, sass/_site.scss */
 .circ-img {
   -moz-border-radius: 100%;
   -webkit-border-radius: 100%;
   border-radius: 100%;
   border: 1px solid #efefef;
 }
-/* line 53, sass/_site.scss */
+/* line 72, sass/_site.scss */
 .circ-img.no-border {
   border: 0;
 }
 
-/* line 59, sass/_site.scss */
+/* line 78, sass/_site.scss */
 .circ-img-wrap .circ-img {
   -webkit-filter: grayscale(100%) brightness(99.5%) contrast(100%);
   filter: grayscale(100%) brightness(99.5%) contrast(100%);
 }
-/* line 62, sass/_site.scss */
+/* line 81, sass/_site.scss */
 .circ-img-wrap .circ-img:hover, .circ-img-wrap .circ-img:focus {
   -webkit-filter: none;
   filter: none;
 }
 
-/* line 69, sass/_site.scss */
+/* line 88, sass/_site.scss */
 .circles-img {
   float: left;
   width: 100%;
@@ -8235,22 +8257,36 @@ img {
   mask-image: url("/img/home-img.png");
 }
 
+/* line 98, sass/_site.scss */
+.square-img-border {
+  padding: 5px;
+  border: 1px solid #eee;
+}
+
 /*
 * Links
 */
-/* line 84, sass/_site.scss */
+/* line 108, sass/_site.scss */
 a {
   color: rgba(101, 204, 200, 0.95);
 }
-/* line 87, sass/_site.scss */
+/* line 111, sass/_site.scss */
 a:hover {
   text-decoration: underline;
+  color: rgba(101, 204, 200, 0.95);
 }
 
 /*
 * Buttoms
 */
-/* line 96, sass/_site.scss */
+/* line 122, sass/_site.scss */
+.btn:focus {
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+/* line 127, sass/_site.scss */
 .btn-circ {
   background-color: rgba(101, 204, 200, 0.95);
   -moz-border-radius: 100%;
@@ -8267,29 +8303,28 @@ a:hover {
   position: absolute;
   right: 0;
 }
-/* line 110, sass/_site.scss */
+/* line 141, sass/_site.scss */
 .btn-circ:hover, .btn-circ:focus {
   color: #fff;
-  font-weight: 400px;
 }
 
 /*
 * Structural elements
 */
-/* line 120, sass/_site.scss */
+/* line 150, sass/_site.scss */
 body {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
 }
 
-/* line 125, sass/_site.scss */
+/* line 155, sass/_site.scss */
 ::selection {
   background-color: rgba(101, 204, 200, 0.95);
   color: #fff;
 }
 
 /* Header */
-/* line 132, sass/_site.scss */
+/* line 162, sass/_site.scss */
 header {
   padding-top: 10px;
   font: 300 1.5em "Lato", sans-serif;
@@ -8299,26 +8334,26 @@ header {
   position: fixed;
   width: 100%;
 }
-/* line 141, sass/_site.scss */
+/* line 171, sass/_site.scss */
 header ul {
   padding-left: 0;
   padding-top: 20px;
   padding-bottom: 37px;
   list-style: none;
 }
-/* line 149, sass/_site.scss */
+/* line 179, sass/_site.scss */
 header ul li {
   display: inline-block;
   margin-right: 20px;
 }
-/* line 153, sass/_site.scss */
+/* line 183, sass/_site.scss */
 header ul li a {
   text-decoration: none;
   color: #fff;
   position: relative;
   padding: 10px;
 }
-/* line 159, sass/_site.scss */
+/* line 189, sass/_site.scss */
 header ul li a::before, header ul li a::after {
   position: absolute;
   left: 50%;
@@ -8328,7 +8363,7 @@ header ul li a::before, header ul li a::after {
   transform: translate(-50%, 0);
   opacity: 0;
 }
-/* line 166, sass/_site.scss */
+/* line 196, sass/_site.scss */
 header ul li a::before {
   content: "";
   width: 0;
@@ -8337,7 +8372,7 @@ header ul li a::before {
   -webkit-transition: width 0.5s linear, opacity 0.1s linear;
   transition: width 0.5s linear, opacity 0.1s linear;
 }
-/* line 172, sass/_site.scss */
+/* line 202, sass/_site.scss */
 header ul li a::after {
   content: "o";
   -moz-transition: opacity 0.1s linear;
@@ -8348,24 +8383,24 @@ header ul li a::after {
   line-height: 10px;
   background-color: rgba(101, 204, 200, 0.95);
 }
-/* line 180, sass/_site.scss */
+/* line 210, sass/_site.scss */
 header ul li a:focus, header ul li a:hover {
   color: #fff;
   text-decoration: none;
 }
-/* line 186, sass/_site.scss */
+/* line 216, sass/_site.scss */
 header ul li a:hover::before {
   content: "";
   border-bottom: 1px solid #fff;
   width: 100%;
   bottom: 0px;
 }
-/* line 193, sass/_site.scss */
+/* line 223, sass/_site.scss */
 header ul li a:hover::after, header ul li a:hover::before {
   opacity: 1;
 }
 
-/* line 203, sass/_site.scss */
+/* line 233, sass/_site.scss */
 .logo {
   -moz-border-radius: 100%;
   -webkit-border-radius: 100%;
@@ -8381,30 +8416,30 @@ header ul li a:hover::after, header ul li a:hover::before {
   max-height: 141%;
 }
 
-/* line 216, sass/_site.scss */
+/* line 246, sass/_site.scss */
 .logo-wrap {
   position: relative;
   padding: 10px 20px 20px 130px;
 }
-/* line 220, sass/_site.scss */
+/* line 250, sass/_site.scss */
 .logo-wrap a, .logo-wrap a:hover {
   text-decoration: none;
   color: #fff;
   display: block;
 }
-/* line 225, sass/_site.scss */
+/* line 255, sass/_site.scss */
 .logo-wrap .name {
   font: 1.8em "Dancing Script", cursive;
   margin-top: 15px;
   line-height: .8em;
 }
-/* line 231, sass/_site.scss */
+/* line 261, sass/_site.scss */
 .logo-wrap .surname {
   margin-left: 15px;
 }
 
 /* Content */
-/* line 238, sass/_site.scss */
+/* line 268, sass/_site.scss */
 .site {
   padding-top: 150px;
   margin-bottom: 120px;
@@ -8413,24 +8448,50 @@ header ul li a:hover::after, header ul li a:hover::before {
   background: #fff;
 }
 
-/* line 248, sass/_site.scss */
+/* line 278, sass/_site.scss */
 #contact {
   text-align: right;
   padding-bottom: 30px;
 }
-/* line 252, sass/_site.scss */
+/* line 282, sass/_site.scss */
 #contact h1 {
   margin-top: 100px;
   margin-bottom: 50px;
 }
 
-/* line 258, sass/_site.scss */
+/* line 288, sass/_site.scss */
+#cv {
+  position: relative;
+}
+/* line 291, sass/_site.scss */
+#cv img {
+  position: absolute;
+  right: 0;
+}
+/* line 14, ../../../../.rvm/gems/ruby-2.1.5/gems/bootstrap-sass-3.3.1.0/assets/stylesheets/bootstrap/mixins/_clearfix.scss */
+#cv p:before, #cv p:after {
+  content: " ";
+  display: table;
+}
+/* line 19, ../../../../.rvm/gems/ruby-2.1.5/gems/bootstrap-sass-3.3.1.0/assets/stylesheets/bootstrap/mixins/_clearfix.scss */
+#cv p:after {
+  clear: both;
+}
+/* line 300, sass/_site.scss */
+#cv h3 {
+  border-bottom: 1px solid rgba(101, 204, 200, 0.95);
+  width: 50%;
+  padding-bottom: 10px;
+  margin-bottom: 25px;
+}
+
+/* line 308, sass/_site.scss */
 .project {
   position: relative;
 }
 
 /* Footer */
-/* line 267, sass/_site.scss */
+/* line 317, sass/_site.scss */
 footer {
   position: fixed;
   z-index: 1;
@@ -8444,11 +8505,11 @@ footer {
   color: #fff;
   font: 300 1em "Lato", sans-serif;
 }
-/* line 276, sass/_site.scss */
+/* line 326, sass/_site.scss */
 footer a {
   color: #fff;
 }
-/* line 280, sass/_site.scss */
+/* line 330, sass/_site.scss */
 footer .container {
   padding-top: 30px;
   padding-bottom: 25px;

@@ -26,6 +26,25 @@ ul{
 	margin-top: 70px;
 }
 
+.big-marg-bt {
+	margin-bottom: 70px;
+}
+
+.col-title {
+	width: 30%;
+	float: left;
+    font-weight: 400;
+}
+
+.col-desc {
+	width: 70%;
+	float: left;
+
+	.no-title {
+		margin-left: 30%;
+	}
+}
+
 /*
 * Images
 */
@@ -76,6 +95,11 @@ img {
     mask-image: url('/img/home-img.png');
 }
 
+.square-img-border {
+	padding: 5px;
+	border: 1px solid $border_cl;
+}
+
 
 /*
 * Links
@@ -86,12 +110,19 @@ a {
 
 	&:hover {
 		text-decoration: underline;
+		color: $accent_cl;
 	}
 }
 
 /*
 * Buttoms
 */
+
+.btn {
+	&:focus {
+		@include box-shadow(none);
+	}
+}
 
 .btn-circ {
 	background-color: $accent_cl;
@@ -251,6 +282,26 @@ header {
 	h1 {
 		margin-top: $contact_h1_mt;
 		margin-bottom: $contact_h1_mt/2;
+	}
+}
+
+#cv {
+	position: relative;
+
+	img {
+		position: absolute;
+		right: 0;
+	}
+
+	p {
+		@include clearfix;
+	}
+
+	h3 {
+		border-bottom: 1px solid rgba(101, 204, 200, 0.95);
+  		width: 50%;
+  		padding-bottom: 10px;
+  		margin-bottom: 25px;
 	}
 }
 
