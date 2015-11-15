@@ -8548,12 +8548,17 @@ header ul li a:hover::after, header ul li a:hover::before {
 }
 
 /* line 354, sass/_site.scss */
+#about {
+  font-size: 1.1em;
+}
+
+/* line 358, sass/_site.scss */
 .project {
   position: relative;
 }
 
 /* Footer */
-/* line 363, sass/_site.scss */
+/* line 367, sass/_site.scss */
 footer {
   position: fixed;
   z-index: 1;
@@ -8567,11 +8572,11 @@ footer {
   color: #fff;
   font: 300 1em "Lato", sans-serif;
 }
-/* line 372, sass/_site.scss */
+/* line 376, sass/_site.scss */
 footer a {
   color: #fff;
 }
-/* line 376, sass/_site.scss */
+/* line 380, sass/_site.scss */
 footer .container {
   padding-top: 30px;
   padding-bottom: 25px;
