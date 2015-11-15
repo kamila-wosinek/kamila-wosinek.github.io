@@ -8184,32 +8184,47 @@ h1, h2, h3, h4 {
 }
 
 /* line 33, sass/_site.scss */
+.med-marg-top {
+  margin-top: 40px;
+}
+
+/* line 37, sass/_site.scss */
 .col-title {
   width: 30%;
   float: left;
   font-weight: 400;
 }
 
-/* line 39, sass/_site.scss */
+/* line 43, sass/_site.scss */
 .col-desc {
   width: 70%;
   float: left;
 }
-/* line 43, sass/_site.scss */
+/* line 47, sass/_site.scss */
 .col-desc .no-title {
   margin-left: 30%;
+}
+
+/* line 52, sass/_site.scss */
+.double-col {
+  -moz-column-count: 2;
+  -webkit-column-count: 2;
+  column-count: 2;
+  -moz-column-gap: 30px;
+  -webkit-column-gap: 30px;
+  column-gap: 30px;
 }
 
 /*
 * Images
 */
-/* line 52, sass/_site.scss */
+/* line 61, sass/_site.scss */
 img {
   max-width: 100%;
   margin-bottom: 20px;
 }
 
-/* line 57, sass/_site.scss */
+/* line 66, sass/_site.scss */
 .quarter-circ-img {
   -moz-border-radius: 100% 0 0;
   -webkit-border-radius: 100%;
@@ -8222,31 +8237,47 @@ img {
   shape-margin: 30px;
   -webkit-shape-margin: 30px;
 }
+/* line 76, sass/_site.scss */
+.quarter-circ-img.smaller-img {
+  margin-top: -30px;
+  width: 45%;
+}
 
-/* line 68, sass/_site.scss */
+/* line 82, sass/_site.scss */
 .circ-img {
   -moz-border-radius: 100%;
   -webkit-border-radius: 100%;
   border-radius: 100%;
   border: 1px solid #efefef;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
-/* line 72, sass/_site.scss */
+/* line 87, sass/_site.scss */
 .circ-img.no-border {
   border: 0;
 }
+/* line 91, sass/_site.scss */
+.circ-img:hover {
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
 
-/* line 78, sass/_site.scss */
+/* line 97, sass/_site.scss */
 .circ-img-wrap .circ-img {
   -webkit-filter: grayscale(100%) brightness(99.5%) contrast(100%);
   filter: grayscale(100%) brightness(99.5%) contrast(100%);
 }
-/* line 81, sass/_site.scss */
+/* line 100, sass/_site.scss */
 .circ-img-wrap .circ-img:hover, .circ-img-wrap .circ-img:focus {
   -webkit-filter: none;
   filter: none;
 }
 
-/* line 88, sass/_site.scss */
+/* line 107, sass/_site.scss */
 .circles-img {
   float: left;
   width: 100%;
@@ -8257,7 +8288,26 @@ img {
   mask-image: url("/img/home-img.png");
 }
 
-/* line 98, sass/_site.scss */
+/* line 117, sass/_site.scss */
+.img-circ-centr {
+  -moz-border-radius: 100%;
+  -webkit-border-radius: 100%;
+  border-radius: 100%;
+  display: block;
+  margin: 0 auto;
+  shape-outside: border-box;
+  -webkit-shape-outside: border-box;
+}
+
+/* line 125, sass/_site.scss */
+.mandala-mask {
+  mask-image: url("../img/mandala.jpg");
+  background: #009966 url("/img/dungas.jpg");
+  width: 50%;
+  height: auto;
+}
+
+/* line 132, sass/_site.scss */
 .square-img-border {
   padding: 5px;
   border: 1px solid #eee;
@@ -8266,11 +8316,11 @@ img {
 /*
 * Links
 */
-/* line 108, sass/_site.scss */
+/* line 142, sass/_site.scss */
 a {
   color: rgba(101, 204, 200, 0.95);
 }
-/* line 111, sass/_site.scss */
+/* line 145, sass/_site.scss */
 a:hover {
   text-decoration: underline;
   color: rgba(101, 204, 200, 0.95);
@@ -8279,14 +8329,14 @@ a:hover {
 /*
 * Buttoms
 */
-/* line 122, sass/_site.scss */
+/* line 156, sass/_site.scss */
 .btn:focus {
   -moz-box-shadow: none;
   -webkit-box-shadow: none;
   box-shadow: none;
 }
 
-/* line 127, sass/_site.scss */
+/* line 161, sass/_site.scss */
 .btn-circ {
   background-color: rgba(101, 204, 200, 0.95);
   -moz-border-radius: 100%;
@@ -8303,7 +8353,7 @@ a:hover {
   position: absolute;
   right: 0;
 }
-/* line 141, sass/_site.scss */
+/* line 175, sass/_site.scss */
 .btn-circ:hover, .btn-circ:focus {
   color: #fff;
 }
@@ -8311,20 +8361,20 @@ a:hover {
 /*
 * Structural elements
 */
-/* line 150, sass/_site.scss */
+/* line 184, sass/_site.scss */
 body {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
 }
 
-/* line 155, sass/_site.scss */
+/* line 189, sass/_site.scss */
 ::selection {
   background-color: rgba(101, 204, 200, 0.95);
   color: #fff;
 }
 
 /* Header */
-/* line 162, sass/_site.scss */
+/* line 196, sass/_site.scss */
 header {
   padding-top: 10px;
   font: 300 1.5em "Lato", sans-serif;
@@ -8334,26 +8384,30 @@ header {
   position: fixed;
   width: 100%;
 }
-/* line 171, sass/_site.scss */
+/* line 205, sass/_site.scss */
 header ul {
   padding-left: 0;
   padding-top: 20px;
   padding-bottom: 37px;
   list-style: none;
 }
-/* line 179, sass/_site.scss */
+/* line 213, sass/_site.scss */
 header ul li {
   display: inline-block;
   margin-right: 20px;
 }
-/* line 183, sass/_site.scss */
+/* line 217, sass/_site.scss */
+header ul li:last-child {
+  margin-right: 0;
+}
+/* line 221, sass/_site.scss */
 header ul li a {
   text-decoration: none;
   color: #fff;
   position: relative;
   padding: 10px;
 }
-/* line 189, sass/_site.scss */
+/* line 227, sass/_site.scss */
 header ul li a::before, header ul li a::after {
   position: absolute;
   left: 50%;
@@ -8363,16 +8417,16 @@ header ul li a::before, header ul li a::after {
   transform: translate(-50%, 0);
   opacity: 0;
 }
-/* line 196, sass/_site.scss */
+/* line 234, sass/_site.scss */
 header ul li a::before {
   content: "";
   width: 0;
-  -moz-transition: width 0.5s linear, opacity 0.1s linear;
-  -o-transition: width 0.5s linear, opacity 0.1s linear;
-  -webkit-transition: width 0.5s linear, opacity 0.1s linear;
-  transition: width 0.5s linear, opacity 0.1s linear;
+  -moz-transition: width 0.5s ease-out, opacity 0.1s ease-out;
+  -o-transition: width 0.5s ease-out, opacity 0.1s ease-out;
+  -webkit-transition: width 0.5s ease-out, opacity 0.1s ease-out;
+  transition: width 0.5s ease-out, opacity 0.1s ease-out;
 }
-/* line 202, sass/_site.scss */
+/* line 240, sass/_site.scss */
 header ul li a::after {
   content: "o";
   -moz-transition: opacity 0.1s linear;
@@ -8383,24 +8437,24 @@ header ul li a::after {
   line-height: 10px;
   background-color: rgba(101, 204, 200, 0.95);
 }
-/* line 210, sass/_site.scss */
+/* line 248, sass/_site.scss */
 header ul li a:focus, header ul li a:hover {
   color: #fff;
   text-decoration: none;
 }
-/* line 216, sass/_site.scss */
+/* line 254, sass/_site.scss */
 header ul li a:hover::before {
   content: "";
   border-bottom: 1px solid #fff;
   width: 100%;
   bottom: 0px;
 }
-/* line 223, sass/_site.scss */
+/* line 261, sass/_site.scss */
 header ul li a:hover::after, header ul li a:hover::before {
   opacity: 1;
 }
 
-/* line 233, sass/_site.scss */
+/* line 271, sass/_site.scss */
 .logo {
   -moz-border-radius: 100%;
   -webkit-border-radius: 100%;
@@ -8416,30 +8470,30 @@ header ul li a:hover::after, header ul li a:hover::before {
   max-height: 141%;
 }
 
-/* line 246, sass/_site.scss */
+/* line 284, sass/_site.scss */
 .logo-wrap {
   position: relative;
   padding: 10px 20px 20px 130px;
 }
-/* line 250, sass/_site.scss */
+/* line 288, sass/_site.scss */
 .logo-wrap a, .logo-wrap a:hover {
   text-decoration: none;
   color: #fff;
   display: block;
 }
-/* line 255, sass/_site.scss */
+/* line 293, sass/_site.scss */
 .logo-wrap .name {
   font: 1.8em "Dancing Script", cursive;
   margin-top: 15px;
   line-height: .8em;
 }
-/* line 261, sass/_site.scss */
+/* line 299, sass/_site.scss */
 .logo-wrap .surname {
   margin-left: 15px;
 }
 
 /* Content */
-/* line 268, sass/_site.scss */
+/* line 306, sass/_site.scss */
 .site {
   padding-top: 150px;
   margin-bottom: 120px;
@@ -8448,22 +8502,29 @@ header ul li a:hover::after, header ul li a:hover::before {
   background: #fff;
 }
 
-/* line 278, sass/_site.scss */
+@media screen and (max-width: 991px) {
+  /* line 316, sass/_site.scss */
+  #home h2 {
+    clear: both;
+  }
+}
+
+/* line 323, sass/_site.scss */
 #contact {
   text-align: right;
   padding-bottom: 30px;
 }
-/* line 282, sass/_site.scss */
+/* line 327, sass/_site.scss */
 #contact h1 {
   margin-top: 100px;
   margin-bottom: 50px;
 }
 
-/* line 288, sass/_site.scss */
+/* line 333, sass/_site.scss */
 #cv {
   position: relative;
 }
-/* line 291, sass/_site.scss */
+/* line 336, sass/_site.scss */
 #cv img {
   position: absolute;
   right: 0;
@@ -8477,7 +8538,7 @@ header ul li a:hover::after, header ul li a:hover::before {
 #cv p:after {
   clear: both;
 }
-/* line 300, sass/_site.scss */
+/* line 345, sass/_site.scss */
 #cv h3 {
   border-bottom: 1px solid rgba(101, 204, 200, 0.95);
   width: 50%;
@@ -8486,13 +8547,13 @@ header ul li a:hover::after, header ul li a:hover::before {
   margin-top: 35px;
 }
 
-/* line 309, sass/_site.scss */
+/* line 354, sass/_site.scss */
 .project {
   position: relative;
 }
 
 /* Footer */
-/* line 318, sass/_site.scss */
+/* line 363, sass/_site.scss */
 footer {
   position: fixed;
   z-index: 1;
@@ -8506,11 +8567,11 @@ footer {
   color: #fff;
   font: 300 1em "Lato", sans-serif;
 }
-/* line 327, sass/_site.scss */
+/* line 372, sass/_site.scss */
 footer a {
   color: #fff;
 }
-/* line 331, sass/_site.scss */
+/* line 376, sass/_site.scss */
 footer .container {
   padding-top: 30px;
   padding-bottom: 25px;

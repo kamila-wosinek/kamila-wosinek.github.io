@@ -30,6 +30,10 @@ ul{
 	margin-bottom: 70px;
 }
 
+.med-marg-top {
+	margin-top: 40px;
+}
+
 .col-title {
 	width: 30%;
 	float: left;
@@ -43,6 +47,11 @@ ul{
 	.no-title {
 		margin-left: 30%;
 	}
+}
+
+.double-col {
+	@include column-count(2);
+	@include column-gap(30px);
 }
 
 /*
@@ -63,15 +72,25 @@ img {
     -webkit-shape-outside: border-box;
     shape-margin: 30px;
     -webkit-shape-margin: 30px;
+
+	&.smaller-img {
+		margin-top: -30px;
+		width: 45%;
+	}
 }
 
 .circ-img {
     @include border-radius(100%);
     border: 1px solid #efefef;
+	@include transition(all .2s ease-in-out);
 
     &.no-border {
         border: 0;
     }
+
+	&:hover {
+		@include transform(scale(1.1));
+	}
 }
 
 .circ-img-wrap {
@@ -93,6 +112,21 @@ img {
     -webkit-shape-outside: url('/img/home-img.png');
     -webkit-shape-margin: 30px;
     mask-image: url('/img/home-img.png');
+}
+
+.img-circ-centr {
+	@include border-radius(100%);
+	display: block;
+	margin: 0 auto;
+	shape-outside: border-box;
+	-webkit-shape-outside: border-box;
+}
+
+.mandala-mask {
+	mask-image: url('../img/mandala.jpg');
+	background: #009966 url('/img/dungas.jpg');
+	width: 50%;
+	height: auto;
 }
 
 .square-img-border {
@@ -180,6 +214,10 @@ header {
 			display: inline-block;
 			margin-right: 20px;
 
+			&:last-child {
+				margin-right: 0;
+			}
+
 			a {
 				text-decoration: none;
 				color: $text_on_accent;
@@ -196,7 +234,7 @@ header {
 				&::before {
 					content: "";
 					width: 0;
-					@include transition(width linear .5s, opacity linear .1s);
+					@include transition(width ease-out .5s, opacity ease-out .1s);
 				}
 
 				&::after {
@@ -273,6 +311,13 @@ header {
 	background: #fff;
 }
 
+#home {
+	@media screen and (max-width: 991px) {
+		h2 {
+			clear: both;
+		}
+	}
+}
 
 
 #contact {
